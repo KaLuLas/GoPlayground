@@ -15,15 +15,20 @@ func init() {
 	fmt.Println("main.init executed.")
 }
 
-func main() {
+func loadUtils() {
 	result := utils.Add(a, utils.Add(b, c))
 	fmt.Printf("result is %v\n", result)
-	chapter4.PrintConst()
+}
+
+func main() {
+	//loadUtils()
+	//chapter4.PrintConst()
 	chapter4.PrintOS()
-	chapter4.TestConvert()
-	chapter4.RunStrings()
-	chapter4.RunStrConv()
+	//chapter4.TestConvert()
+	//chapter4.RunStrings()
+	//chapter4.RunStrConv()
 	chapter4.TestTimePack()
-	chapter4.TestIntPointer()
-	chapter4.TestStrPointer()
+	//chapter4.TestIntPointer()
+	//chapter4.TestStrPointer()
+	chapter4.PrintTextIteration()
 }
