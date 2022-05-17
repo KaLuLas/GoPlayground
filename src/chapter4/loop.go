@@ -1,6 +1,8 @@
 package chapter4
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func PrintLoop() {
 	for i := 0; i < 5; i++ {
@@ -26,5 +28,18 @@ func PrintTextIteration() {
 	// 根据utf8字符迭代
 	for pos, char := range str {
 		fmt.Printf("character on position %d is %c\n", pos, char)
+	}
+}
+
+func PrintGotoLabel() {
+START:
+	for i := 0; i <= 2; i++ {
+		for j := 0; j <= 5; j++ {
+			if j == 4 {
+				continue START
+			}
+
+			fmt.Printf("i is: %d, and j is: %d\n", i, j)
+		}
 	}
 }

@@ -2,6 +2,7 @@ package main
 
 import (
 	"chapter4"
+	"chapter6"
 	"fmt"
 	"utils"
 )
@@ -31,4 +32,8 @@ func main() {
 	//chapter4.TestIntPointer()
 	//chapter4.TestStrPointer()
 	chapter4.PrintTextIteration()
+	//chapter4.PrintGotoLabel()
+	ret1, ret2 := chapter6.GetX2AndX3_2(10)
+	fmt.Printf("ret1 is %d, ret2 is %d", ret1, ret2)
+	//chapter6.PrintStackTrace()
 }
