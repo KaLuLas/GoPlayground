@@ -34,6 +34,9 @@ func main() {
 	chapter4.PrintTextIteration()
 	//chapter4.PrintGotoLabel()
 	ret1, ret2 := chapter6.GetX2AndX3_2(10)
-	fmt.Printf("ret1 is %d, ret2 is %d", ret1, ret2)
+	fmt.Printf("ret1 is %d, ret2 is %d\n", ret1, ret2)
 	//chapter6.PrintStackTrace()
+	chapter6.RunAdder()
+	aviAdder := chapter6.MakeAddSuffix(".avi")
+	fmt.Println(aviAdder("chapter4"))
 }
