@@ -3,6 +3,7 @@ package main
 import (
 	"chapter4"
 	"chapter6"
+	"chapter7"
 	"fmt"
 	"utils"
 )
@@ -39,4 +40,6 @@ func main() {
 	chapter6.RunAdder()
 	aviAdder := chapter6.MakeAddSuffix(".avi")
 	fmt.Println(aviAdder("chapter4"))
+	//chapter6.Where()
+	chapter7.SliceExample()
 }
