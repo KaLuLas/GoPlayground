@@ -22,6 +22,16 @@ func loadUtils() {
 	fmt.Printf("result is %v\n", result)
 }
 
+func runChapter7() {
+	chapter7.SliceExample()
+	//chapter7.MultiDimSlice()
+	//chapter7.GrowSlice()
+	//chapter7.Reslice()
+	chapter7.AppendSlice()
+	result := chapter7.InsertStringSlice([]string{"a", "b", "c"}, []string{"e", "f", "g"}, 1)
+	fmt.Println(result)
+}
+
 func main() {
 	//loadUtils()
 	//chapter4.PrintConst()
@@ -41,5 +51,5 @@ func main() {
 	aviAdder := chapter6.MakeAddSuffix(".avi")
 	fmt.Println(aviAdder("chapter4"))
 	//chapter6.Where()
-	chapter7.SliceExample()
+	runChapter7()
 }

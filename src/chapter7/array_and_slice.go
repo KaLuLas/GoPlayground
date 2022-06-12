@@ -8,7 +8,9 @@ var emptyArray1 = [5]int{} // empty array, '{}' is necessary
 func SliceExample() {
 	var arr1 [6]int
 	//var slice1 []int = arr1[2:5]
-	slice1 := arr1[2:5]
+	slice1 := arr1[2:5] // 1. from array
+	//slice1 := make([]int, 0, 5) // 2. with 'make'
+	//slice1 := []int{1,2,3,4,5} // 3. without 'make'
 
 	for i := 0; i < len(arr1); i++ {
 		arr1[i] = i
