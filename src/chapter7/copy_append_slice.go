@@ -20,6 +20,21 @@ func InsertStringSlice(slice, insertion []string, index int) []string {
 }
 
 func RemoveStringSlice(slice []string, from int, end int) []string {
-	// TODO
-	return []string{"to", "be", "continue"}
+	if end < from {
+		return slice
+	}
+
+	if from < 0 || end >= len(slice) {
+		return slice
+	}
+
+	// approach 1
+	//result := make([]string, len(slice)-(end-from+1))
+	//at := copy(result, slice[:from])
+	//copy(result[at:], slice[end+1:])
+
+	// approach 2
+	result := append(slice[:from], slice[end+1:]...)
+
+	return result
 }

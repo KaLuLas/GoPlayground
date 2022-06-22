@@ -30,6 +30,13 @@ func runChapter7() {
 	chapter7.AppendSlice()
 	result := chapter7.InsertStringSlice([]string{"a", "b", "c"}, []string{"e", "f", "g"}, 1)
 	fmt.Println(result)
+	result = chapter7.RemoveStringSlice([]string{"a", "b", "c", "d"}, 0, 2)
+	fmt.Println(result)
+	fmt.Println(chapter7.ChangeFirstCharInString("iimple", 's'))
+	fmt.Println(chapter7.ReverseString("Kalulas"))
+	chapter7.MapFunction(func(input int) int {
+		return input * 10
+	}, []int{1, 2, 3, 4})
 }
 
 func main() {
