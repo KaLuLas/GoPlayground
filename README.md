@@ -1,7 +1,10 @@
 # GoPlayground
 #### 运行环境
 
-Go 1.18或更高版本
+1. Go 1.18或更高版本
+2. 设置GOROOT/GOPATH环境变量，其中GOPATH值为工程目录（"GoPlayground"）
+3. 于GoPlayground目录下执行 go build -o main.exe -gcflags="all=-N -l" main.go
+4. 执行main.exe即可
 
 
 

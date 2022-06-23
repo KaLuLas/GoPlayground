@@ -5,7 +5,7 @@ import "fmt"
 func AppendSlice() {
 	//slice1 := []int{1, 2, 3}
 	slice1 := make([]int, 5, 10)
-	slice2 := append(slice1, 4, 5, 6)
+	slice2 := append(slice1, 4, 5, 6, 7, 8, 9, 10, 11) // bigger than 10, changes in slice2 will not affect slice1
 	fmt.Println(slice1)
 	fmt.Println(slice2)
 	fmt.Println(&slice1 == &slice2) // different slice

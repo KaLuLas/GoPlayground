@@ -16,9 +16,7 @@ func SliceExample() {
 		arr1[i] = i
 	}
 
-	for i := 0; i < len(slice1); i++ {
-		fmt.Printf("Slice at %d is %d \n", i, slice1[i])
-	}
+	fmt.Println(slice1)
 
 	fmt.Printf("length of array is %d \n", len(arr1))
 	fmt.Printf("length of slice is %d \n", len(slice1))

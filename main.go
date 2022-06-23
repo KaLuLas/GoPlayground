@@ -4,6 +4,7 @@ import (
 	"chapter4"
 	"chapter6"
 	"chapter7"
+	"chapter8"
 	"fmt"
 	"utils"
 )
@@ -39,6 +40,10 @@ func runChapter7() {
 	}, []int{1, 2, 3, 4})
 }
 
+func runChapter8() {
+	chapter8.MakeMaps()
+}
+
 func main() {
 	//loadUtils()
 	//chapter4.PrintConst()
@@ -59,4 +64,5 @@ func main() {
 	fmt.Println(aviAdder("chapter4"))
 	//chapter6.Where()
 	runChapter7()
+	runChapter8()
 }
