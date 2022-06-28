@@ -42,6 +42,7 @@ func runChapter7() {
 
 func runChapter8() {
 	chapter8.MakeMaps()
+	chapter8.CheckAndDeleteMap()
 }
 
 func main() {
