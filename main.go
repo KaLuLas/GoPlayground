@@ -5,6 +5,7 @@ import (
 	"chapter6"
 	"chapter7"
 	"chapter8"
+	"chapter9"
 	"fmt"
 	"utils"
 )
@@ -43,6 +44,11 @@ func runChapter7() {
 func runChapter8() {
 	chapter8.MakeMaps()
 	chapter8.CheckAndDeleteMap()
+	chapter8.SortMap()
+}
+
+func runChapter9() {
+	chapter9.SizeOfInt()
 }
 
 func main() {
@@ -66,4 +72,5 @@ func main() {
 	//chapter6.Where()
 	runChapter7()
 	runChapter8()
+	runChapter9()
 }
