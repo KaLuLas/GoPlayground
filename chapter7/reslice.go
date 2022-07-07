@@ -1,8 +1,8 @@
 package chapter7
 
 import (
+	"GoPlayground/utils"
 	"fmt"
-	"utils"
 )
 
 func MakeIntSlice(length int, cap int, value int) {

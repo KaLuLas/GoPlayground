@@ -1,13 +1,13 @@
 package main
 
 import (
-	"chapter4"
-	"chapter6"
-	"chapter7"
-	"chapter8"
-	"chapter9"
+	"GoPlayground/chapter4"
+	"GoPlayground/chapter6"
+	"GoPlayground/chapter7"
+	"GoPlayground/chapter8"
+	"GoPlayground/chapter9"
+	"GoPlayground/utils"
 	"fmt"
-	"utils"
 )
 
 var a int     // default value
