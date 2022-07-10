@@ -1,6 +1,7 @@
 package main
 
 import (
+	"GoPlayground/chapter10"
 	"GoPlayground/chapter4"
 	"GoPlayground/chapter6"
 	"GoPlayground/chapter7"
@@ -51,6 +52,12 @@ func runChapter9() {
 	chapter9.SizeOfInt()
 }
 
+func runChapter10() {
+	chapter10.PersonCreation()
+	var mat = chapter10.NewMatrix(10, 10)
+	fmt.Printf("new matrix %+v, with size %d", mat, chapter10.SizeOfMatrix())
+}
+
 func main() {
 	//loadUtils()
 	//chapter4.PrintConst()
@@ -73,4 +80,5 @@ func main() {
 	runChapter7()
 	runChapter8()
 	runChapter9()
+	runChapter10()
 }
