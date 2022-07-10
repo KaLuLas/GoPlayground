@@ -4,7 +4,7 @@
 1. Go 1.18或更高版本
 2. 确保已设置GOROOT环境变量
 3. 确保GO111MODULE=on
-4. 于GoPlayground目录下执行 go build -o main.exe -gcflags="all=-N -l" main.go
+4. 于GoPlayground目录下执行 go build main.go
 5. 执行main.exe即可
 
 
