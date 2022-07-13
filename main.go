@@ -8,6 +8,7 @@ import (
 	"GoPlayground/chapter8"
 	"GoPlayground/chapter9"
 	"GoPlayground/utils"
+	"GoPlayground/utils/math"
 	"fmt"
 )
 
@@ -55,7 +56,14 @@ func runChapter9() {
 func runChapter10() {
 	chapter10.PersonCreation()
 	var mat = chapter10.NewMatrix(10, 10)
-	fmt.Printf("new matrix %+v, with size %d", mat, chapter10.SizeOfMatrix())
+	fmt.Printf("new matrix %+v, with size %d\n", mat, chapter10.SizeOfMatrix())
+	dObject := chapter10.NewDerivedObject()
+	fmt.Printf("%+v \n", dObject)
+}
+
+func runUtilsMath() {
+	vec3 := math.NewVector3(3.0, 4.0, 5.0)
+	fmt.Printf("%+v with abs %f \n", vec3, vec3.Abs())
 }
 
 func main() {
@@ -81,4 +89,5 @@ func main() {
 	runChapter8()
 	runChapter9()
 	runChapter10()
+	runUtilsMath()
 }
