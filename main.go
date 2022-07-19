@@ -59,6 +59,19 @@ func runChapter10() {
 	fmt.Printf("new matrix %+v, with size %d\n", mat, chapter10.SizeOfMatrix())
 	dObject := chapter10.NewDerivedObject()
 	fmt.Printf("%+v \n", dObject)
+	// combination
+	car := &chapter10.Mercedes{}
+	car.Name = "MyFirstCar"
+	//car = new(chapter10.Mercedes) // the same
+	car.SayHI()
+	//runtime.SetFinalizer(car, chapter10.Finalizer)
+	// inheritance
+	var engine chapter10.Engine
+	engine = new(chapter10.BasicEngine)
+	engine.Start()
+
+	engineSlice := make([]chapter10.Engine, 1)
+	engineSlice = append(engineSlice, engine)
 }
 
 func runUtilsMath() {
@@ -67,6 +80,7 @@ func runUtilsMath() {
 }
 
 func main() {
+	runUtilsMath()
 	//loadUtils()
 	//chapter4.PrintConst()
 	chapter4.PrintOS()
@@ -89,5 +103,4 @@ func main() {
 	runChapter8()
 	runChapter9()
 	runChapter10()
-	runUtilsMath()
 }
