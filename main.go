@@ -2,6 +2,7 @@ package main
 
 import (
 	"GoPlayground/chapter10"
+	"GoPlayground/chapter11"
 	"GoPlayground/chapter4"
 	"GoPlayground/chapter6"
 	"GoPlayground/chapter7"
@@ -74,6 +75,11 @@ func runChapter10() {
 	engineSlice = append(engineSlice, engine)
 }
 
+func runChapter11() {
+	chapter11.CheckShaperType()
+	chapter11.CheckShaperWithSwitch()
+}
+
 func runUtilsMath() {
 	vec3 := math.NewVector3(3.0, 4.0, 5.0)
 	fmt.Printf("%+v with abs %f \n", vec3, vec3.Abs())
@@ -103,4 +109,5 @@ func main() {
 	runChapter8()
 	runChapter9()
 	runChapter10()
+	runChapter11()
 }
