@@ -6,6 +6,16 @@ var emptyArray [5]int      // empty array
 var emptyArray1 = [5]int{} // empty array, '{}' is necessary
 
 func SliceExample() {
+	var skills []uint
+	//skills := []uint{}
+	if skills == nil {
+		fmt.Println("declare with 'var skills []uint' is nil")
+		// but declare with 'skills := []uint{}' is not nil
+	}
+
+	skills = append(skills, 0)
+	fmt.Println("but nil slice can be appended")
+
 	var arr1 [6]int
 	//var slice1 []int = arr1[2:5]
 	slice1 := arr1[2:5] // 1. from array
