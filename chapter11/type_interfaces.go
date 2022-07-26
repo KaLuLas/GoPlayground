@@ -15,14 +15,23 @@ type Circle struct {
 
 type Shaper interface {
 	Area() float32
+	Direction() float32
 }
 
 func (square Square) Area() float32 {
 	return square.side * square.side
 }
 
+func (square *Square) Direction() float32 {
+	return 1.0
+}
+
 func (circle *Circle) Area() float32 {
 	return circle.radius * circle.radius * math.Pi
+}
+
+func (circle *Circle) Direction() float32 {
+	return -1.0
 }
 
 func CheckShaperType() {
@@ -33,9 +42,9 @@ func CheckShaperType() {
 
 	if t, ok := shaper.(*Square); ok {
 		fmt.Printf("the type of %#v is: %T\n", shaper, t)
-	} else if t, ok := shaper.(Square); ok {
+	} /* else if t, ok := shaper.(Square); ok { // <- compile error
 		fmt.Printf("the type of %#v is: %T\n", shaper, t)
-	}
+	} */
 }
 
 func CheckShaperWithSwitch() {
