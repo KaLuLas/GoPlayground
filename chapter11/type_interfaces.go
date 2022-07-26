@@ -3,6 +3,7 @@ package chapter11
 import (
 	"fmt"
 	"math"
+	"unsafe"
 )
 
 type Square struct {
@@ -11,6 +12,11 @@ type Square struct {
 
 type Circle struct {
 	radius float32
+}
+
+type Triangle struct {
+	width  float32
+	height float32
 }
 
 type Shaper interface {
@@ -34,6 +40,15 @@ func (circle *Circle) Direction() float32 {
 	return -1.0
 }
 
+func (t Triangle) Area() float32 {
+	return t.width * t.height / 2
+}
+
+func (t Triangle) Direction() float32 {
+	//TODO implement me
+	panic("implement me")
+}
+
 func CheckShaperType() {
 	var shaper Shaper
 	//shaper = Square{side: 5}  // -> chapter11.Square
@@ -45,6 +60,10 @@ func CheckShaperType() {
 	} /* else if t, ok := shaper.(Square); ok { // <- compile error
 		fmt.Printf("the type of %#v is: %T\n", shaper, t)
 	} */
+
+	var shaper1 Shaper = Triangle{3, 4}
+	fmt.Println("Triangle Shaper with size:", unsafe.Sizeof(shaper1)) // 16
+	fmt.Println("Square Shaper with size:", unsafe.Sizeof(shaper))    // 16
 }
 
 func CheckShaperWithSwitch() {

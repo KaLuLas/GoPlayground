@@ -78,6 +78,9 @@ func runChapter10() {
 func runChapter11() {
 	chapter11.CheckShaperType()
 	chapter11.CheckShaperWithSwitch()
+	chapter11.TrySortDays()
+	chapter11.TrySortPersons()
+	chapter11.PrintEmptyInterfaceSize()
 }
 
 func runUtilsMath() {

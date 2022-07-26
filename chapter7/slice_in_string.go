@@ -8,12 +8,9 @@ func ChangeFirstCharInString(input string, value byte) string {
 
 func ReverseString(input string) string {
 	c := []byte(input)
-	var tmp byte
 	for i := 0; i < len(c)/2; i++ {
 		other := len(c) - i - 1
-		tmp = c[i]
-		c[i] = c[other]
-		c[other] = tmp
+		c[i], c[other] = c[other], c[i]
 	}
 
 	return string(c)
