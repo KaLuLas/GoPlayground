@@ -28,6 +28,7 @@ func loadUtils() {
 }
 
 func runChapter7() {
+	fmt.Println("///// CHAPTER 7 /////")
 	chapter7.SliceExample()
 	//chapter7.MultiDimSlice()
 	//chapter7.GrowSlice()
@@ -45,16 +46,19 @@ func runChapter7() {
 }
 
 func runChapter8() {
+	fmt.Println("///// CHAPTER 8 /////")
 	chapter8.MakeMaps()
 	chapter8.CheckAndDeleteMap()
 	chapter8.SortMap()
 }
 
 func runChapter9() {
+	fmt.Println("///// CHAPTER 9 /////")
 	chapter9.SizeOfInt()
 }
 
 func runChapter10() {
+	fmt.Println("///// CHAPTER 10 /////")
 	chapter10.PersonCreation()
 	var mat = chapter10.NewMatrix(10, 10)
 	fmt.Printf("new matrix %+v, with size %d\n", mat, chapter10.SizeOfMatrix())
@@ -76,11 +80,15 @@ func runChapter10() {
 }
 
 func runChapter11() {
+	fmt.Println("///// CHAPTER 11 /////")
 	chapter11.CheckShaperType()
 	chapter11.CheckShaperWithSwitch()
 	chapter11.TrySortDays()
 	chapter11.TrySortPersons()
 	chapter11.PrintEmptyInterfaceSize()
+	chapter11.EmptyInterface()
+	chapter11.ReflectFloat()
+	chapter11.ReflectCar()
 }
 
 func runUtilsMath() {
